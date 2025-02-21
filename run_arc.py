@@ -2,7 +2,7 @@ import os
 import json
 from arc_solver import HyperDimensionalSolver
 
-def run_training_tests(training_dir: str = r"C:\Users\Acer\Desktop\Project Simurg\Graveyard\Arc\arcprize\data\training"):
+def run_training_tests(training_dir: str = os.path.join(os.getcwd(), "data", "training")):
     """Run solver on all training files"""
     solver = HyperDimensionalSolver()
     results = []
